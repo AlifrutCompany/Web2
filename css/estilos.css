@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+header, section, footer {
+    padding: 20px;
+
+}
+
+.section-card {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 300px; /* Ajusta la altura de la imagen al 100% del contenedor */
+    background-image: url("/Web2/img/21.jpeg"); /* Establece la imagen como fondo */
+    background-repeat: repeat; /* Hace que la imagen se repita vertical y horizontalmente */
+    display: inline;
+
+}
+.hero-section {
+    position: relative;
+    background: 
+        /* Fondo gradiente */
+        linear-gradient(to right, rgba(255, 255, 255, 0.44), rgba(240, 129, 19, 0.302), rgba(255, 255, 255, 0.44)),
+        /* Imagen de fondo */
+        url(/Web2/img/ind.jpeg);
+    background-size: cover; /* Ajuste de la imagen al área */
+    color: white;
+    text-align: center;
+    padding: inherit;
+    
+}
+
+/* Otros estilos... */
+.services-section, .testimonials-section, .news-section, .faq-section, .newsletter-section {
+    background: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+footer {
+    background: #002244;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+}
+.card-container {
+    display: inline-flex;
+    justify-content: space-around; /* o 'space-between' según tus preferencias */
+}
+.card-body {
+    transition: font-size 0.5s ease; /* Agrega una transición suave al tamaño del texto */
+}
+/* Estilo al pasar el ratón sobre las tarjetas de productos */
+.card-body:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 15px #f08313;
+    border-radius: 15px;
+    font-size: 1.5em; /* Aumenta el tamaño del texto al pasar el ratón */
+
+}
+
+img{
+    border-radius: 5px;
+        
+    
+}
+
+header a {
+    color: rgb(17, 3, 3);
+    text-decoration: none;
+    margin-left: 15px; /* Ajusta el margen entre los enlaces */
+}
+
+
+.menu {
+    position: absolute;
+    top: calc(100% + 5px); /* Posición debajo del enlace */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.menu-item {
+    position: relative;
+    color: #fff;
+    transition: font-size 0.3s ease; /* Agrega una transición suave al tamaño del texto */
+    padding: 10px;
+
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    color: white; /* Cambia el color del texto a blanco */
+    font-size: 2.0em; /* Aumenta el tamaño del texto al pasar el ratón */
+
+}
+
+.menu-item:hover + .menu {
+    opacity: 2; /* Hace visible el menú al pasar el ratón sobre el enlace */
+}
+
+
+
+/* Animación de los menús del encabezado */
+.menu{
+    position: absolute;
+    top: calc(100% + 5px); /* Posición debajo del enlace */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Añadido transform */
+    z-index: 1;
+    transform: translateY(-10px); /* Añadido transform */
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    cursor: pointer; /* Agregado cursor pointer para indicar que es interactivo */
+}
+
+.menu-item:hover + .menu {
+    opacity: 1; /* Hace visible el menú al pasar el ratón sobre el enlace */
+    transform: translateY(0); /* Añadido transform */
+}
+.card-container{
+    border-radius: 20px;
+}
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em; /* Ajusta el tamaño según tu preferencia */
+    font-weight: normal; /* Si necesitas quitar el negrita */
+}
+
+.logo-container {
+    max-width: 100%; /* Establece el ancho máximo del contenedor del logo al 100% */
+    margin: 0 auto; /* Centra el contenedor del logo horizontalmente */
+}
+
+.logo {
+    height: 100px; /* Altura del logo */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Color de la franja */
+    width: 100%;
+    padding: 10px 0; /* Espaciado interno superior e inferior */
+
+}
+:link{
+    align-items: right;
+    
+}
+p{
+    text-align: justify;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0; /* Para que la lista no tenga sangría */
+  }
+li {
+margin-bottom: 10px; /* Espaciado entre ítems */
+display: flex;
+align-items: center;
+}
+li i {
+margin-right: 8px; /* Espacio entre el icono y el texto */
+font-size: 24px; /* Tamaño del icono */
+}
+.stats-section {
+display: flex;
+justify-content: space-around;
+padding: 20px;
+}
+
+.stat-card {
+background-color: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+width: 20%;
+height: 200px;
+}
+
+.stat-card i {
+font-size: 50px;
+color: #f08313;
+margin-bottom: 10px;
+}
+
+.stat-number {
+font-size: 24px;
+font-weight: bold;
+color: #2b2b2b;
+}
+
+.stat-description {
+color: #f08313;
+font-size: 18px;
+margin-top: 5px;
+}
+.icon-container {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px; /* Ajusta el tamaño según sea necesario */
+height: 50px; /* Ajusta el tamaño según sea necesario */
+border-radius: 50%;
+background-color: #fff; /* Color de fondo para los íconos */
+margin: 0 auto 10px; /* Espacio entre el ícono y el título */
+}
+
+.icon-container i {
+    font-size: 54px; /* Tamaño del ícono */
+    color: #f08313; /* Color del ícono */
+}

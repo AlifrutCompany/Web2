@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Alifrut | Catálogo</title>
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f081133c;
+            color: #333;
+            padding-top: 50px; /* Para ajustarse al header fijo */
+        }
+        .product-card {
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .product-card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card .card-body {
+            padding: 20px;
+        }
+        .product-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: 'Lobster', cursive;
+            color: #f08313;
+            font-size: 1.5rem;
+        }
+        .product-card p {
+            margin-bottom: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .product-card:hover{
+            transform: translateY(-20px);
+            box-shadow: 0px 5px 15px rgba(240, 129, 19, 0.44);
+            border-radius: 15px;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h1 {
+            font-family: 'Lobster', cursive;
+            color: #f08313;
+        }
+        img{
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="/Web2/img/a.png" alt="Logo" align="left" width="500px">
+
+<div class="container">
+    <div class="section-title">
+        <h1>Catálogo de Productos</h1>
+        <div align="right">
+            <a href="index.html" class="menu-item" data-menu="productos" style="color:#f08313;">Inicio</a>
+            <a href="nosotros.html" class="menu-item" data-menu="nosotros" color="white" style="color:#f08313;">Nosotros</a>
+            <a href="contactanos.html" class="menu-item" data-menu="contacto" style="color:#f08313;">Contactanos</a>
+        </div>
+       
+    </div>
+
+    <div class="row"> 
+        <br>
+        <br>
+        <br>
+        <!-- Aquí va el código de los productos -->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/9.png" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Fresa IQF</h3>
+                    <p style="text-align: justify;">Este producto es una caja de fresas enteras IQF de diversas variedades como Festival, 
+                        Albion, Fortunas, Sayulas, u otras autorizadas por el cliente. Se presenta en cajas de 30 libras con bolsa de 
+                        polietileno de grado alimenticio. También está disponible en bolsas de 2 kilos o 1 kilo, en cajas de 6 a 12 bolsas. 
+                        Los ingredientes son únicamente fresa, sin componentes alergénicos o químicos sensibles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/8.png" alt="Producto 2" class="card-img-top">
+                <div class="card-body">
+                    <h3>Fresa en cubo</h3>
+                    <p style="text-align: justify;">Este producto es una variedad de fresas, principalmente de las variedades firmes como 
+                        Festival, Camino Real y Albion, entre otras. También incluye algunas variedades suaves. Se presenta principalmente 
+                        en cajas de 30 libras o bolsas de 2 kilos, con cortes de 6 mm, 10 mm y 12 mm. Puede estar disponible en formato IQF 
+                        o en bloque, con o sin azúcar. No contiene ingredientes alergénicos o químicos sensibles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/7.jpg" alt="Producto 1" class="card-img-top">
+                <div class="card-body">
+                    <h3>Fresa SortOut IQF</h3>
+                    <p style="text-align: justify;">Descripción: Este producto consiste en fresas enteras seleccionadas. Se presenta en 
+                        cajas IQF de 30 libras o en la presentación que solicite el cliente. También puede estar disponible en bloque, con 
+                        o sin azúcar, en la proporción deseada (como 4+1, 9+1, etc.). Los ingredientes son fresa y azúcar, y no contiene 
+                        componentes alergénicos o químicos sensibles.</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/10.png" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>FRESA EN RODAJAS ½” 4+1/9+1</h3>
+                    <p style="text-align: justify;">
+                        Este producto consiste en fresas cortadas en rodajas de 1/2", en proporciones de 4+1 o 9+1 (fresas y azúcar). 
+                        Se presenta en cubos de plástico de 6.5 libras, cubos de 3.5 kilos, cajas de 28 libras, 30 libras, y barriles de 
+                        400 libras. Los ingredientes incluyen fresas refinadas o estándar y azúcar, sin componentes alergénicos o químicos 
+                        sensibles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/11.png" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Zarzamora IQF</h3>
+                    <p style="text-align: justify;">
+                        Este producto consiste en moras enteras, presentadas en formato IQF o bloque. En formato IQF, se ofrecen en cajas de 
+                        30 libras con bolsa de polietileno de grado alimenticio. En formato de bloque, se presentan en cubos de plástico de 
+                        28 libras o 30 libras, con la opción de incluir o no azúcar. Los ingredientes son únicamente mora y azúcar, sin 
+                        componentes alergénicos ni químicos sensibles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/12.png" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Arandano IQF</h3>
+                    <p style="text-align: justify;">
+                        Este producto es una caja de arándanos enteros IQF, de cualquier variedad autorizada por el cliente. Se presenta en 
+                        cajas de 30 libras con bolsa de polietileno de grado alimenticio. También está disponible en bolsas de 2 kilos o 1 
+                        kilo, en cajas de 6 a 12 bolsas. Los ingredientes son únicamente arándanos, sin componentes alergénicos ni químicos 
+                        sensibles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/13.png" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Mango Chuck</h3>
+                    <p style="text-align: justify;">
+                        Este producto consiste en mangos en trozos de 3/4 a 1 pulgada, presentados en una caja de 30 libras con bolsa de 
+                        polietileno de grado alimenticio. Las variedades disponibles son Tommy o Kent, aunque también se puede utilizar 
+                        cualquier otra variedad autorizada por el cliente. No contiene componentes alergénicos ni químicos sensibles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/14.png" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Mango Cachete</h3>
+                    <p style="text-align: justify;">
+                      Este producto ofrece mangos IQF en presentaciones de caja de 30 libras con bolsa de polietileno de grado alimenticio, 
+                      así como en bloque en cubos de 28 y 30 libras. Las variedades disponibles son Tommy o Kent, aunque también se puede 
+                      utilizar cualquier otra variedad autorizada por el cliente. No contiene componentes alergénicos ni químicos sensibles.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/15.png" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Manzana Cubo</h3>
+                    <p style="text-align: justify;">
+                        Esta selección de cubos de manzana ofrece una variedad exquisita que incluye las variedades Rallada de Puebla, 
+                        Granny Smith, Romme Beauty, Romme Beauty Doble Roja, Winter Banana, Winter Perami, Golden, Red Delicious y Fuji. 
+                        Cada variedad aporta su propio perfil de sabor y textura distintiva, desde el dulce y crujiente hasta el refrescante
+                        y jugoso. Estos cubos son versátiles y pueden usarse en una amplia gama de aplicaciones culinarias.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/16.png" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Purees (Fresa, Mango, Frambueza)</h3>
+                    <p style="text-align: justify;">
+                        Este producto se presenta en cubos de 28 y 30 libras, así como en barriles de 400 libras. Puede estar disponible 
+                            con o sin azúcar, según la preferencia del cliente. Además, se ofrece en diferentes tamaños de malla, incluyendo 2, 
+                            3 y 9 mm, lo que permite adaptarse a diversas necesidades de preparación. Es importante destacar que este producto 
+                            no contiene ingredientes alergénicos ni químicos sensibles, garantizando su seguridad y calidad para todos los c
+                            onsumidores..</p>
+                </div>
+            </div>
+        </div>
+        <!--empenzan las bolcitas-->
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/mango.jpg" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Bolsa de Mango Chunk - 1kg</h3>
+                    <p style="text-align: justify;">
+                       También nos dedicamos a la elaboración de bolsas de 1kg de nuestro producto en IQF (Individually Quick Frozen), 
+                       utilizando una amplia variedad de frutas frescas. Nuestro proceso de congelación preserva la frescura y
+                       calidad de las frutas, asegurando que puedas disfrutar de su sabor y nutrientes en cualquier momento. Nuestras bolsas de frutas 
+                       congeladas son una opción 
+                       conveniente y deliciosa para añadir a tus recetas favoritas, batidos saludables o simplemente disfrutar como un 
+                       refrigerio refrescante.</p>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/piña.jpg" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Bolsa de Piña Chunk - 1kg</h3>
+                    <p style="text-align: justify;">
+                        También nos dedicamos a la elaboración de bolsas de 1kg de nuestro producto en IQF (Individually Quick Frozen), 
+                       utilizando una amplia variedad de frutas frescas. Nuestro proceso de congelación preserva la frescura y
+                       calidad de las frutas, asegurando que puedas disfrutar de su sabor y nutrientes en cualquier momento. Nuestras bolsas de frutas 
+                       congeladas son una opción 
+                       conveniente y deliciosa para añadir a tus recetas favoritas, batidos saludables o simplemente disfrutar como un 
+                       refrigerio refrescante.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/fresa.jpg" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Bolsa de Fresa - 1kg</h3>
+                    <p style="text-align: justify;">
+                        También nos dedicamos a la elaboración de bolsas de 1kg de nuestro producto en IQF (Individually Quick Frozen), 
+                       utilizando una amplia variedad de frutas frescas. Nuestro proceso de congelación preserva la frescura y
+                       calidad de las frutas, asegurando que puedas disfrutar de su sabor y nutrientes en cualquier momento. Nuestras bolsas de frutas 
+                       congeladas son una opción 
+                       conveniente y deliciosa para añadir a tus recetas favoritas, batidos saludables o simplemente disfrutar como un 
+                       refrigerio refrescante.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/sandia.jpg" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Bolsa de Sandía Chunk - 1kg</h3>
+                    <p style="text-align: justify;">
+                        También nos dedicamos a la elaboración de bolsas de 1kg de nuestro producto en IQF (Individually Quick Frozen), 
+                       utilizando una amplia variedad de frutas frescas. Nuestro proceso de congelación preserva la frescura y
+                       calidad de las frutas, asegurando que puedas disfrutar de su sabor y nutrientes en cualquier momento. Nuestras bolsas de frutas 
+                       congeladas son una opción 
+                       conveniente y deliciosa para añadir a tus recetas favoritas, batidos saludables o simplemente disfrutar como un 
+                       refrigerio refrescante.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/mix.jpg" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Bolsa de Mix de Frutas - 1kg</h3>
+                    <p style="text-align: justify;">
+                        También nos dedicamos a la elaboración de bolsas de 1kg de nuestro producto en IQF (Individually Quick Frozen), 
+                       utilizando una amplia variedad de frutas frescas. Nuestro proceso de congelación preserva la frescura y
+                       calidad de las frutas, asegurando que puedas disfrutar de su sabor y nutrientes en cualquier momento. Nuestras bolsas de frutas 
+                       congeladas son una opción 
+                       conveniente y deliciosa para añadir a tus recetas favoritas, batidos saludables o simplemente disfrutar como un 
+                       refrigerio refrescante.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="/Web2/img/melon2.jpg" alt="Producto 3" class="card-img-top">
+                <div class="card-body">
+                    <h3>Bolsa de Melón Chunk - 1kg</h3>
+                    <p style="text-align: justify;">
+                        También nos dedicamos a la elaboración de bolsas de 1kg de nuestro producto en IQF (Individually Quick Frozen), 
+                       utilizando una amplia variedad de frutas frescas. Nuestro proceso de congelación preserva la frescura y
+                       calidad de las frutas, asegurando que puedas disfrutar de su sabor y nutrientes en cualquier momento. Nuestras bolsas de frutas 
+                       congeladas son una opción 
+                       conveniente y deliciosa para añadir a tus recetas favoritas, batidos saludables o simplemente disfrutar como un 
+                       refrigerio refrescante.</p>
+                </div>
+            </div>
+        </div>
+        <div  align="center">
+            <a href="index.html" class="btn" style="background-color: #f08313; color: #fff;">Regresar</a>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
+
+</body>
+</html>
